@@ -1,0 +1,2 @@
+~/my_setup/PLclock
+cat TDCsystem_wrapper.bit > /dev/xdevcfg
