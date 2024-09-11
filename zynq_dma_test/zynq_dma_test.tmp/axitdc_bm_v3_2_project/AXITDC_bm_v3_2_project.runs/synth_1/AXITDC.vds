@@ -1,0 +1,973 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Aug 14 02:44:46 2024
+# Process ID: 1628
+# Current directory: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1
+# Command line: vivado.exe -log AXITDC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXITDC.tcl
+# Log file: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1/AXITDC.vds
+# Journal file: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1\vivado.jou
+# Running On: DESKTOP-Q5FQ0UQ, OS: Windows, CPU Frequency: 4700 MHz, CPU Physical cores: 24, Host memory: 33454 MB
+#-----------------------------------------------------------
+source AXITDC.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Users/wen02/Documents/GitHub/AXITDC_v3'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is f:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.srcs/utils_1/imports/synth_1/AXITDC.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.srcs/utils_1/imports/synth_1/AXITDC.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top AXITDC -part xc7z010clg400-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 28136
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1417.508 ; gain = 443.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AXITDC' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/AXITDC.vhd:71]
+INFO: [Synth 8-3491] module 'axi_gpio_0' declared at 'f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/synth/axi_gpio_0.vhd:59' bound to instance 'AXI_control' of component 'axi_gpio_0' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/AXITDC.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio_0' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/synth/axi_gpio_0.vhd:85]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 2 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1270' bound to instance 'U0' of component 'axi_gpio' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/synth/axi_gpio_0.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1356]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-226] default block is never used [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:838]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1356]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio_0' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/synth/axi_gpio_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'TDCchannel2' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/TDCchannel2.vhd:66]
+	Parameter COARSE_WIDTH bound to: 56 - type: integer 
+	Parameter NTaps bound to: 192 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delayLine' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:45]
+	Parameter NTaps bound to: 192 - type: integer 
+INFO: [Synth 8-113] binding component instance 'firstCarry' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:108]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'risingEdgeDetector' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/risingEdgeDetector.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'risingEdgeDetector' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/risingEdgeDetector.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'delayLine' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/delayLine.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'encoder' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:43]
+	Parameter NTaps bound to: 192 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:78]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:92]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:64]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 32 - type: integer 
+	Parameter BITS bound to: 3 - type: integer 
+	Parameter LEVEL bound to: 5 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized0' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 16 - type: integer 
+	Parameter BITS bound to: 4 - type: integer 
+	Parameter LEVEL bound to: 4 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized1' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 8 - type: integer 
+	Parameter BITS bound to: 5 - type: integer 
+	Parameter LEVEL bound to: 3 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized2' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 4 - type: integer 
+	Parameter BITS bound to: 6 - type: integer 
+	Parameter LEVEL bound to: 2 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized3' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 2 - type: integer 
+	Parameter BITS bound to: 7 - type: integer 
+	Parameter LEVEL bound to: 1 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized3' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized2' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized1' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized0' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'encoder' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/encoder.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'counter' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/counter.vhd:35]
+	Parameter BITS bound to: 56 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/counter.vhd:35]
+INFO: [Synth 8-3491] module 'control2' declared at 'F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/control2.v:23' bound to instance 'controlv2' of component 'control2' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/TDCchannel2.vhd:147]
+INFO: [Synth 8-6157] synthesizing module 'control2' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/control2.v:23]
+	Parameter COARSE_WIDTH bound to: 56 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/control2.v:76]
+INFO: [Synth 8-638] synthesizing module 'timestamp_short_fifo' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/synth/timestamp_short_fifo.vhd:74]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 64 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 64 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 2 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x72 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 28 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 27 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_9' declared at 'f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38305' bound to instance 'U0' of component 'fifo_generator_v13_2_9' [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/synth/timestamp_short_fifo.vhd:544]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [F:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [F:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [F:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [F:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [F:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [F:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-256] done synthesizing module 'timestamp_short_fifo' (0#1) [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/synth/timestamp_short_fifo.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'control2' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/control2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'TDCchannel2' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/TDCchannel2.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'sync' [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/sync.vhd:37]
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'sync' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/sync.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'AXITDC' (0#1) [F:/Users/wen02/Documents/GitHub/zynq_tdc_v3/AXITDC/src/AXITDC.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:661]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:661]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT1_ND_G2.READ_REG2_GEN[0].GPIO2_DBus_i_reg was removed.  [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:790]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT1_ND_G2.READ_REG2_GEN[1].GPIO2_DBus_i_reg was removed.  [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:790]
+WARNING: [Synth 8-6014] Unused sequential element Dual.gpio2_Data_In_reg was removed.  [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:923]
+WARNING: [Synth 8-7129] Port ALMOST_FULL_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_ACK_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VALID_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OVERFLOW_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UNDERFLOW_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[5] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[4] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[3] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[2] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[1] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[0] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[5] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[4] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[3] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[2] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[1] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[0] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[5] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[4] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[3] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[2] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[1] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[0] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[4] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[3] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[2] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[1] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[0] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[4] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[3] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[2] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[1] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[0] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[4] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[3] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[2] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[1] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_NEGATE[0] in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module wr_pf_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST in module wr_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module wr_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_WR_RST in module wr_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[4] in module wr_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[3] in module wr_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[2] in module wr_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[1] in module wr_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[0] in module wr_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module wr_bin_cntr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_EN_INTO_LOGIC in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_INTO_LOGIC in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_EN in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST_FULL_FF in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_BUSY in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EMPTY in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RAM_RD_EN in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY in module wr_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module rd_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_RD_RST in module rd_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[4] in module rd_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[3] in module rd_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[2] in module rd_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[1] in module rd_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_PNTR_PLUS2[0] in module rd_status_flags_as is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module rd_bin_cntr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_EN_INTO_LOGIC in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_RST_INTO_LOGIC in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_RST_BUSY in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RAM_WR_EN in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST_FULL_FF in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_FULL_FB in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FULL in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS1_RD[4] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS1_RD[3] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS1_RD[2] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS1_RD[1] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS1_RD[0] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH[4] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH[3] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH[2] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH[1] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH[0] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_ASSERT[4] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_ASSERT[3] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_ASSERT[2] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_ASSERT[1] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_ASSERT[0] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_NEGATE[4] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_NEGATE[3] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_NEGATE[2] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_NEGATE[1] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_THRESH_NEGATE[0] in module rd_logic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST in module clk_x_pntrs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_RST in module clk_x_pntrs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RAM_REGOUT_EN in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FAB_REGOUT_EN in module memory is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1666.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 72 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/timestamp_short_fifo.xdc] for cell 'TDCv2/controlv2/fifo_inst/U0'
+Finished Parsing XDC File [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/timestamp_short_fifo.xdc] for cell 'TDCv2/controlv2/fifo_inst/U0'
+Parsing XDC File [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/axi_gpio_0_board.xdc] for cell 'AXI_control/U0'
+Finished Parsing XDC File [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/axi_gpio_0_board.xdc] for cell 'AXI_control/U0'
+Parsing XDC File [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/axi_gpio_0.xdc] for cell 'AXI_control/U0'
+Finished Parsing XDC File [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/axi_gpio_0/axi_gpio_0.xdc] for cell 'AXI_control/U0'
+Parsing XDC File [F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AXITDC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AXITDC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/timestamp_short_fifo_clocks.xdc] for cell 'TDCv2/controlv2/fifo_inst/U0'
+Finished Parsing XDC File [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/timestamp_short_fifo_clocks.xdc] for cell 'TDCv2/controlv2/fifo_inst/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/users/wen02/documents/github/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/timestamp_short_fifo_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AXITDC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AXITDC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AXITDC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AXITDC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AXITDC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AXITDC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1666.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  FDR => FDRE: 24 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1666.973 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for TDCv2/controlv2/fifo_inst/U0. (constraint file  F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1/dont_touch.xdc, line 11).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_control/U0. (constraint file  F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1/dont_touch.xdc, line 17).
+Applied set_property KEEP_HIERARCHY = SOFT for TDCv2/controlv2/fifo_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_control. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TDCv2/controlv2/fifo_inst/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TDCv2/controlv2/fifo_inst/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TDCv2/controlv2/fifo_inst/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TDCv2/controlv2/fifo_inst/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TDCv2/controlv2/fifo_inst/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for TDCv2/controlv2/fifo_inst/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                RUNNINGs |                              010 |                               01
+                OVERFLOW |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 5     
+	   2 Input    5 Bit       Adders := 10    
+	   2 Input    4 Bit       Adders := 17    
++---XORs : 
+	   2 Input      5 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 28    
++---Registers : 
+	              192 Bit    Registers := 2     
+	               96 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               56 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 14    
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[0].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[1].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module cdc_sync.
+INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module cdc_sync.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------------------------------------------------+------------+----------------+----------------------+--------------+
+|Module Name                                                                                                | RTL Object | Inference      | Size (Depth x Width) | Primitives   | 
++-----------------------------------------------------------------------------------------------------------+------------+----------------+----------------------+--------------+
+|TDCv2/controlv2/fifo_inst/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.mem /\gdm.dm_gen.dm  | RAM_reg    | User Attribute | 32 x 64              | RAM32M x 11  | 
++-----------------------------------------------------------------------------------------------------------+------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------------------------------------------------------------------------+------------+----------------+----------------------+--------------+
+|Module Name                                                                                                | RTL Object | Inference      | Size (Depth x Width) | Primitives   | 
++-----------------------------------------------------------------------------------------------------------+------------+----------------+----------------------+--------------+
+|TDCv2/controlv2/fifo_inst/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.mem /\gdm.dm_gen.dm  | RAM_reg    | User Attribute | 32 x 64              | RAM32M x 11  | 
++-----------------------------------------------------------------------------------------------------------+------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|encoder     | validOut_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    70|
+|3     |LUT1   |    17|
+|4     |LUT2   |    82|
+|5     |LUT3   |    37|
+|6     |LUT4   |    40|
+|7     |LUT5   |    29|
+|8     |LUT6   |   168|
+|9     |RAM32M |    11|
+|10    |SRL16E |     1|
+|11    |FDCE   |   103|
+|12    |FDPE   |    19|
+|13    |FDR    |     8|
+|14    |FDRE   |   862|
+|15    |FDSE   |     3|
+|16    |IBUF   |    19|
+|17    |OBUF   |   107|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1666.973 ; gain = 692.949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 583 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1666.973 ; gain = 692.949
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1666.973 ; gain = 692.949
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1666.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1666.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  FDR => FDRE: 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 11 instances
+
+Synth Design complete | Checksum: c24acc3
+INFO: [Common 17-83] Releasing license: Synthesis
+212 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1666.973 ; gain = 1085.641
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1666.973 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1/AXITDC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AXITDC_utilization_synth.rpt -pb AXITDC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 02:45:21 2024...

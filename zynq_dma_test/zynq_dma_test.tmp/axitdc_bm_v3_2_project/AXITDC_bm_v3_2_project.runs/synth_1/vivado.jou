@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Aug 14 02:44:46 2024
+# Process ID: 1628
+# Current directory: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1
+# Command line: vivado.exe -log AXITDC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXITDC.tcl
+# Log file: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1/AXITDC.vds
+# Journal file: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.runs/synth_1\vivado.jou
+# Running On: DESKTOP-Q5FQ0UQ, OS: Windows, CPU Frequency: 4700 MHz, CPU Physical cores: 24, Host memory: 33454 MB
+#-----------------------------------------------------------
+source AXITDC.tcl -notrace

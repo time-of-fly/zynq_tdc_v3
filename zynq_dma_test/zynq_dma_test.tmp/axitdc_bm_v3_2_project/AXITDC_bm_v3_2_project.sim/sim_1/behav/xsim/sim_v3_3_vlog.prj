@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/sim/timestamp_short_fifo.v" \
+"../../../../../../../zynq_tdc_v3/AXITDC/src/control2.v" \
+"../../../../../../../zynq_tdc_v3/AXITDC/src/sim_v3_3.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

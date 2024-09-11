@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../AXITDC_bm_v3_2_project.gen/sources_1/ip/timestamp_short_fifo/sim/timestamp_short_fifo.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

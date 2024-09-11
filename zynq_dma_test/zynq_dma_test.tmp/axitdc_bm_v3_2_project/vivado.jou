@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Aug 14 01:45:03 2024
+# Process ID: 30212
+# Current directory: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27776 F:\Users\wen02\Documents\GitHub\zynq_dma_test\zynq_dma_test.tmp\axitdc_bm_v3_2_project\AXITDC_bm_v3_2_project.xpr
+# Log file: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/vivado.log
+# Journal file: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project\vivado.jou
+# Running On: DESKTOP-Q5FQ0UQ, OS: Windows, CPU Frequency: 4700 MHz, CPU Physical cores: 24, Host memory: 33454 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.tmp/axitdc_bm_v3_2_project/AXITDC_bm_v3_2_project.xpr
+update_compile_order -fileset sources_1
+launch_simulation

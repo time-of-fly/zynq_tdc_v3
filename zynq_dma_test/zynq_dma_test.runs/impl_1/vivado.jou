@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Aug 27 11:02:20 2024
+# Process ID: 7704
+# Current directory: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.runs/impl_1
+# Command line: vivado.exe -log TDCsystem_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TDCsystem_wrapper.tcl -notrace
+# Log file: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.runs/impl_1/TDCsystem_wrapper.vdi
+# Journal file: F:/Users/wen02/Documents/GitHub/zynq_dma_test/zynq_dma_test.runs/impl_1\vivado.jou
+# Running On: DESKTOP-Q5FQ0UQ, OS: Windows, CPU Frequency: 4700 MHz, CPU Physical cores: 24, Host memory: 33454 MB
+#-----------------------------------------------------------
+source TDCsystem_wrapper.tcl -notrace

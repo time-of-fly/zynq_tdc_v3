@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../zynq_tdc_v3/AXITDC/src/MyPkg.vhd" \
+"../../../../../../../zynq_tdc_v3/AXITDC/src/risingEdgeDetector.vhd" \
+"../../../../../../../zynq_tdc_v3/AXITDC/src/delayLine.vhd" \
+"../../../../../../../zynq_tdc_v3/AXITDC/src/adderTreeLegacy.vhd" \
+"../../../../../../../zynq_tdc_v3/AXITDC/src/encoder.vhd" \
+"../../../../../../../zynq_tdc_v3/AXITDC/src/counter.vhd" \
+"../../../../../../../zynq_tdc_v3/AXITDC/src/TDCchannel2.vhd" \
+
+# Do not sort compile order
+nosort

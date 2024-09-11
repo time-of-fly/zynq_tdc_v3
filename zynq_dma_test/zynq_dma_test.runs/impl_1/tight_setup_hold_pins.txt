@@ -1,0 +1,6 @@
++================================+================================+==========================================================================================================================+
+| Launch Setup Clock             | Launch Hold Clock              | Pin                                                                                                                      |
++================================+================================+==========================================================================================================================+
+| clk_out1_TDCsystem_clk_wiz_0_0 | clk_out1_TDCsystem_clk_wiz_0_0 | TDCsystem_i/AXITDC_bm_1/U0/TDCv2/encoder/Adder_tree/RECURSE.NEXT_LEVEL/RECURSE.NEXT_LEVEL/RECURSE.NEXT_LEVEL/x_reg[22]/D |
+| clk_out1_TDCsystem_clk_wiz_0_0 | clk_out1_TDCsystem_clk_wiz_0_0 | TDCsystem_i/AXITDC_bm_1/U0/TDCv2/encoder/Adder_tree/RECURSE.NEXT_LEVEL/RECURSE.NEXT_LEVEL/RECURSE.NEXT_LEVEL/x_reg[23]/D |
++--------------------------------+--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
